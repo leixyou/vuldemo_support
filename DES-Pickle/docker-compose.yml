@@ -1,0 +1,11 @@
+version: '2'
+services:
+ des_pickle1:
+   restart: always
+#   image: tutum/lamp:latest
+   build:
+       context: ./Docker/
+       dockerfile: Dockerfile
+   container_name: des_pickle1
+   ports:
+    - "5001:5000"
