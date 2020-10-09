@@ -1,0 +1,14 @@
+version: '2'
+services:
+ DES_yaml:
+   restart: always
+#   image: tutum/lamp:latest
+   build:
+       context: ./Docker/
+       dockerfile: Dockerfile
+   container_name: DES_yaml
+   ports:
+    - "5000:5000"
+#   volumes:
+#    - "./php.ini:/etc/php5/apache2/php.ini"
+#    - "./PbootCMS-custom/:/var/www/html"
