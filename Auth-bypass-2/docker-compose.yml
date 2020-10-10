@@ -1,0 +1,11 @@
+version: '2'
+services:
+ auth_bypass2_yaml:
+   restart: always
+#   image: tutum/lamp:latest
+   build:
+       context: ./Docker/
+       dockerfile: Dockerfile
+   container_name: auth_bypass2_yaml
+   ports:
+    - "5004:5000"
